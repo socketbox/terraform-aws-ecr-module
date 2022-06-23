@@ -6,7 +6,7 @@
 
 ```hcl
 module "ecr" {
-    source = "github.com/pbs/terraform-aws-ecr-module?ref=x.y.z"
+    source = "github.com/pbs/terraform-aws-ecr-module?ref=0.0.1"
 }
 ```
 
@@ -22,7 +22,7 @@ Integrate this module like so:
 
 ```hcl
 module "ecr" {
-  source = "github.com/pbs/terraform-aws-ecr-module?ref=x.y.z"
+  source = "github.com/pbs/terraform-aws-ecr-module?ref=0.0.1"
 
   # Tagging Parameters
   organization = var.organization
@@ -38,7 +38,7 @@ module "ecr" {
 
 If this repo is added as a subtree, then the version of the module should be close to the version shown here:
 
-`x.y.z`
+`0.0.1`
 
 Note, however that subtrees can be altered as desired within repositories.
 

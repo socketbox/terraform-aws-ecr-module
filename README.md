@@ -81,6 +81,7 @@ No modules.
 | <a name="input_organization"></a> [organization](#input\_organization) | Organization using this module. Used to prefix tags so that they are easily identified as being from your organization | `string` | n/a | yes |
 | <a name="input_product"></a> [product](#input\_product) | Tag used to group resources according to product | `string` | n/a | yes |
 | <a name="input_repo"></a> [repo](#input\_repo) | Tag used to point to the repo using this module | `string` | n/a | yes |
+| <a name="input_encryption_configuration"></a> [encryption\_configuration](#input\_encryption\_configuration) | (optional) Encryption configuration. Set `encryption_type` to `KMS` to use KMS encryption. Set `kms_key_arn` to the ARN of the KMS key to use. Set `encryption_type` to `AES256` to use AES256 encryption. | <pre>object({<br>    encryption_type = string<br>    kms_key_arn     = optional(string)<br>  })</pre> | <pre>{<br>  "encryption_type": "AES256",<br>  "kms_key_arn": null<br>}</pre> | no |
 | <a name="input_image_tag_mutability"></a> [image\_tag\_mutability](#input\_image\_tag\_mutability) | (optional) Image tag mutability (allowance for a tag be reassigned to another image) | `string` | `"IMMUTABLE"` | no |
 | <a name="input_images_to_retain"></a> [images\_to\_retain](#input\_images\_to\_retain) | (optional) Number of most recent images to retain (set to null for no retention policy) | `number` | `50` | no |
 | <a name="input_name"></a> [name](#input\_name) | (optional) Name of the ECR repository (defaults to product if null) | `string` | `null` | no |

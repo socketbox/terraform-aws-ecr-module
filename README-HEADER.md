@@ -1,13 +1,11 @@
-# PBS TF ecr module
+# PBS TF ECR Module
 
 ## Installation
 
 ### Using the Repo Source
 
 ```hcl
-module "ecr" {
-    source = "github.com/pbs/terraform-aws-ecr-module?ref=x.y.z"
-}
+github.com/pbs/terraform-aws-ecr-module?ref=x.y.z
 ```
 
 ### Alternative Installation Methods

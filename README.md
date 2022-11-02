@@ -1,13 +1,11 @@
-# PBS TF ecr module
+# PBS TF ECR Module
 
 ## Installation
 
 ### Using the Repo Source
 
 ```hcl
-module "ecr" {
-    source = "github.com/pbs/terraform-aws-ecr-module?ref=0.0.1"
-}
+github.com/pbs/terraform-aws-ecr-module?ref=x.y.z
 ```
 
 ### Alternative Installation Methods
@@ -22,7 +20,7 @@ Integrate this module like so:
 
 ```hcl
 module "ecr" {
-  source = "github.com/pbs/terraform-aws-ecr-module?ref=0.0.1"
+  source = "github.com/pbs/terraform-aws-ecr-module?ref=x.y.z"
 
   # Tagging Parameters
   organization = var.organization
@@ -38,7 +36,7 @@ module "ecr" {
 
 If this repo is added as a subtree, then the version of the module should be close to the version shown here:
 
-`0.0.1`
+`x.y.z`
 
 Note, however that subtrees can be altered as desired within repositories.
 
@@ -54,14 +52,14 @@ Below is automatically generated documentation on this Terraform module using [t
 
 | Name | Version |
 |------|---------|
-| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.1.7 |
+| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.3.2 |
 | <a name="requirement_aws"></a> [aws](#requirement\_aws) | >= 4.5.0 |
 
 ## Providers
 
 | Name | Version |
 |------|---------|
-| <a name="provider_aws"></a> [aws](#provider\_aws) | 4.5.0 |
+| <a name="provider_aws"></a> [aws](#provider\_aws) | 4.35.0 |
 
 ## Modules
 
@@ -73,6 +71,7 @@ No modules.
 |------|------|
 | [aws_ecr_lifecycle_policy.repo_lifecycle_policy](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/ecr_lifecycle_policy) | resource |
 | [aws_ecr_repository.repo](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/ecr_repository) | resource |
+| [aws_default_tags.common_tags](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/default_tags) | data source |
 
 ## Inputs
 

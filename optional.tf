@@ -29,3 +29,15 @@ variable "image_tag_mutability" {
     error_message = "Valid values are \"MUTABLE\" and \"IMMUTABLE\"."
   }
 }
+
+variable "encryption_configuration" {
+  description = "(optional) Encryption configuration. Set `encryption_type` to `KMS` to use KMS encryption. Set `kms_key_arn` to the ARN of the KMS key to use. Set `encryption_type` to `AES256` to use AES256 encryption."
+  default = {
+    encryption_type = "AES256"
+    kms_key_arn     = null
+  }
+  type = object({
+    encryption_type = string
+    kms_key_arn     = optional(string)
+  })
+}

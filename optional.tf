@@ -53,3 +53,9 @@ variable "allow_lambda_access" {
   default     = true
   type        = bool
 }
+
+variable "force_delete" {
+  description = "(optional) Force delete ECR repository even if it has images in it"
+  default     = false
+  type        = bool
+}

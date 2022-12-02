@@ -41,3 +41,15 @@ variable "encryption_configuration" {
     kms_key_arn     = optional(string)
   })
 }
+
+variable "create_ecr_policy" {
+  description = "(optional) Create ECR policy"
+  default     = true
+  type        = bool
+}
+
+variable "allow_lambda_access" {
+  description = "(optional) Allow Lambda access to ECR"
+  default     = true
+  type        = bool
+}

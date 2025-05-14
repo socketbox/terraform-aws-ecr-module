@@ -2,7 +2,6 @@ name: Release
 on:
   push:
     branches: [ main ]
-concurrency: release-${{ github.base_ref }}
 jobs:
   release:
     runs-on: ubuntu-latest

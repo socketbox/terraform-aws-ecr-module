@@ -9,7 +9,6 @@ on:
     types: [opened, synchronize]
     branches:
       - main
-concurrency: format-${{ github.base_ref }}
 jobs:
   format:
     name: "Format"

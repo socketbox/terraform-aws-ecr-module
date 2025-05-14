@@ -9,7 +9,6 @@ on:
     types: [opened, synchronize]
     branches:
       - main
-concurrency: document-${{ github.base_ref }}
 jobs:
   document:
     name: "Document"

@@ -8,7 +8,6 @@ on:
     types: [opened, synchronize]
     branches:
       - main
-concurrency: todo-${{ github.base_ref }}
 jobs:
   todo:
     name: "TODO"

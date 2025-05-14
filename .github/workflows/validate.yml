@@ -9,7 +9,6 @@ on:
     types: [opened, synchronize]
     branches:
       - main
-concurrency: validate-${{ github.base_ref }}
 jobs:
   validate:
     name: "Validate"

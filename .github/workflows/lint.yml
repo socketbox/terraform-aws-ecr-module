@@ -6,7 +6,6 @@ on:
     types: [opened, synchronize]
     branches:
       - main
-concurrency: lint-${{ github.base_ref }}
 jobs:
   lint:
     name: "Lint"

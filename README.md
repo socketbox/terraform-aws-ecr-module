@@ -11,6 +11,7 @@ github.com/pbs/terraform-aws-ecr-module?ref=0.3.27
 ### Alternative Installation Methods
 
 More information can be found on these install methods and more in [the documentation here](./docs/general/install).
+THis is a waste fo teim
 
 ## Usage
 
